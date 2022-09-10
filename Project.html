@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdur Rahim/Projects </title>
+     <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        font-family: sans-serif , Arial, Helvetica, sans-serif;
+        transition: .5s;
+    }
+    a{
+        text-decoration: none;
+        transition: .5s;
+    }
+
+    p, h1, h2, h3, h4, h5,h6{
+        text-transform: capitalize;
+        transition: .5s;
+    }
+    p{  
+        line-height: 1.5rem;
+    }
+    .padding-x{
+        padding: 0px 60px;
+    }
+    .margin-y{
+        margin: 50px 0px;
+    }
+
+/* basic typography end here */
+
+    #column{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e9e0e0;
+        padding-bottom: 20px;
+    }
+    .col{
+        margin-top: 20px;
+    }
+    .col2{
+        border-left: 2px solid red;
+        padding-left: 15px;
+    }
+    #footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 60px;
+        font-size: 13px;
+        color: rgb(210, 205, 205);
+        background-color: rgb(16 16 16);
+        border-top: 1px solid #1e2026;
+    }
+    #footer p a{
+        color: white;
+    }
+    #footer p a:hover{
+        border-bottom: 1px solid white;
+    }
+/* projects html style  */
+    #projects {
+        background-image: url("img/b20.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 70px;
+        background-attachment: fixed;
+        border-top: 2px solid rebeccapurple;
+    }
+    .first-page-projects {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .second-page-projects{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .single-item{
+    width: 30%;
+    height: 150px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 15px;
+    }
+    .single-item:hover a{
+        border-bottom: 2px solid white;
+    }
+    .single-item a h4{
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .project-btn{
+        text-align: right;
+        margin-top: 30px;
+    }
+    .project-btn button:hover{
+        background-color: #16a3a3;
+        color: whitesmoke;
+        box-shadow: 2px 2px 10px white;
+    }
+
+    .second-page-projects{
+        display: flex;
+        transition: 1s;
+    }
+    #project-btn {
+        background-color: #f72222;
+        padding: 5px 18px;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 0;
+        color: white;
+    }
+/* project html style  end here  */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .padding-x {
+            padding: 0px 30px;
+        }
+        #contact {
+            padding: 50px 30px;
+        }
+        #footer {
+            padding: 15px 30px;
+        }
+/* project html responsiive start  */
+.single-item a h4 {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+    .padding-x {
+        padding: 0px 15px;
+    }
+    #hero {
+        flex-wrap: wrap;
+    }
+    .hero-left {
+        width: 100%;
+    }
+    .hero-right {
+        width: 100%;
+        margin-top: 25px;
+    }
+    #column {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .col {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .col2{
+        border-left: none;
+    }
+	#footer {
+        padding: 15px 15px;
+        flex-wrap: wrap;
+    }
+	
+/* project html responsiive start  */
+    .single-item {
+        width: 100%;
+    }
+    .single-item a h4 {
+        font-size: 17px;
+    }
+
+/* project html responsiive start  */
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .padding-x {
+        padding: 0px 15px;
+    }
+ 
+    #hero {
+        flex-wrap: wrap;
+    }
+    .hero-left {
+        width: 100%;
+    }
+    .hero-right {
+        width: 100%;
+        margin-top: 25px;
+    }
+    #column {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .col {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .col2{
+        border-left: none;
+    }
+    #contact{
+        flex-wrap: wrap;
+    }
+    .con-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .con-right {
+        width: 100%;
+    }
+	#contact {
+        padding: 50px 15px;
+    }
+	#footer {
+        padding: 15px 15px;
+    }
+	
+	
+	
+/* project html responsiive start  */
+.single-item {
+    width: 48%;
+}
+.single-item a h4 {
+    font-size: 17px;
+}
+
+/* project html responsiive start  */
+
+
+}
+
+     </style>
+</head>
+<body>
+
+
+
+
+<h1 style="text-align:center; font-weight:bold; font-size:40px; margin: 30px 0px;">More projects are here</h1>
+
+
+<section id="projects" class="padding-x">
+        <div class="first-page-projects">
+                    <div class="single-item">
+                        <a href="https://abdurthedevloper.github.io/AbdurRahim.Official.Info/" target="blank"><h4>Project Number = 1</h4></a>
+                    </div>
+                    <div class="single-item">
+                        <a href="https://abdurthedevloper.github.io/COLORLIBE-PREMIUM-STUDY-WEB/" target="blank"><h4>Project Number = 2</h4></a>
+                    </div>
+                    <div class="single-item">
+                    <a href="https://abdurthedevloper.github.io/Imagine-a-company/" target="blank"><h4>Project Number = 3</h4></a>
+                    </div>
+                <div class="single-item">
+                    <a href="https://abdurthedevloper.github.io/natural_beauty-Website/" target="blank"><h4>Project Number = 4</h4></a>
+                </div>
+                <div class="single-item">
+                    <a href="https://abdurthedevloper.github.io/Pioneer-Bank/" target="blank"><h4>Project Number = 5</h4></a>
+                </div>
+                <div class="single-item">
+                <a href="https://abdurthedevloper.github.io/Book-list/" target="blank"><h4>Project Number = 6</h4></a>
+            </div>
+                    <div class="single-item">
+                        <a href="https://abdurthedevloper.github.io/image_galary/" target="blank"><h4>Project Number = 7</h4></a>
+                    </div>
+                    <div class="single-item">
+                        <a href="https://abdurthedevloper.github.io/Majestical_psd/" target="blank"><h4>Project Number = 8</h4></a>
+                    </div>
+                    <div class="single-item">
+                    <a href="https://abdurthedevloper.github.io/Shopping-Card/" target="blank"><h4>Project Number = 9</h4></a>
+                    </div>
+ </div>
+
+    <div class="project-btn">
+        <button id="project-btn" class="btn"> v </button>
+    </div>
+
+
+    <div class="second-page-projects">
+        <div class="single-item">
+            <a href="https://abdurthedevloper.github.io/Mordenist-PSD/" target="blank"><h4>Project Number = 10</h4></a>
+        </div>
+        <div class="single-item">
+            <a href="https://abdurthedevloper.github.io/PSD-TO-HTML/" target="blank"><h4>Project Number = 11</h4></a>
+        </div>
+        <div class="single-item">
+        <a href="https://abdurthedevloper.github.io/Classical_psd_templete/" target="blank"><h4>Project Number = 12</h4></a>
+        </div>
+    <div class="single-item">
+        <a href="https://abdurthedevloper.github.io/WEB-TEAM-PSD/" target="blank"><h4>Project Number = 13</h4></a>
+    </div>
+    <div class="single-item">
+        <a href="https://abdur-rahim1.github.io/Panda-Commarec/" target="blank"><h4>Project Number = 14</h4></a>
+    </div>
+    <div class="single-item">
+    <a href="https://abdur-rahim1.github.io/thca-response/" target="blank"><h4>Project Number = 15</h4></a>
+</div>
+        <div class="single-item">
+            <a href="https://abdur-rahim1.github.io/AbdurRahim.Me/" target="blank"><h4>Project Number = 16</h4></a>
+        </div>
+        <div class="single-item">
+            <a href="https://abdur-rahim1.github.io/htttp-Web-templete.com/" target="blank"><h4>Project Number = 17</h4></a>
+        </div>
+        <div class="single-item">
+        <a href="https://abdur-rahim1.github.io/Free-Firm-gardenig/" target="blank"><h4>Project Number = 18</h4></a>
+        </div>
+
+        <div class="single-item">
+            <a href="https://abdur-rahim1.github.io/PSDTEMPLETE-WITH-RESPONSIVE/" target="blank"><h4>Project Number = 19</h4></a>
+        </div>
+        <div class="single-item">
+            <a href="https://abdur-rahim1.github.io/getLoan/" target="blank"><h4>Project Number = 20</h4></a>
+        </div>
+        <div class="single-item">
+        <a href="https://abdur-rahim1.github.io/ReaponsiveWebSite/" target="blank"><h4>Project Number = 21</h4></a>
+        </div>
+    <div class="single-item">
+        <a href="https://abdur-rahim1.github.io/Clock/" target="blank"><h4>Project Number = 22</h4></a>
+    </div>
+    <div class="single-item">
+        <a href="https://abdur-rahim1.github.io/first_Webpage/" target="blank"><h4>Project Number = 23</h4></a>
+    </div>
+    <div class="single-item">
+    <a href="https://abdurthedevloper.github.io/Fadilicius-psd/" target="blank"><h4>Project Number = 24</h4></a>
+</div>
+        <div class="single-item">
+            <a href="https://abdurthedevloper.github.io/e-commarce-web/" target="blank"><h4>Project Number = 25</h4></a>
+        </div>
+        <div class="single-item">
+            <a href="https://abdurthedevloper.github.io/image-gallary--m/" target="blank"><h4>Project Number = 26</h4></a>
+        </div>
+        <div class="single-item">
+        <a href="https://abdurthedevloper.github.io/composition-web/" target="blank"><h4>Project Number = 27</h4></a>
+        </div>
+
+
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section id="column" class="padding-x">
+    <div class="col1 col">
+        <p>Desining with passion While <br>
+            Exploring the world</p>
+    </div>
+    <div class="col2 col">
+        <p>Any type of Quary <br>
+            & Discation</p>
+    </div>
+    <div class="col3 col">
+        <p>Any type of Quary <br>
+            & Discation</p>
+    </div>
+</section>
+
+
+
+
+
+<section id="footer" class="padding-x">
+    <p>All Right Reserved By <a href="https://www.facebook.com/abdurrahim.abdurrahim.71653318" target="blank">Abdur Rahim</a></p>
+  <p>created date 05.04.2022</p>
+</section>
+
+
+
+
+<script>
+
+
+
+// project btn     
+
+const projectBtn = document.getElementById('project-btn');
+const project1 = document.querySelector('.first-page-projects')
+const project2 = document.querySelector('.second-page-projects');
+
+project2.style.display = 'none';
+projectBtn.addEventListener('click', ()=>{
+
+    if(project2.style.display == 'none'){
+        project2.style.display = 'flex';
+        projectBtn.style.transform = "rotate(180deg)";
+    }else{
+        project2.style.display = 'none';
+        projectBtn.style.transform = "rotate(0deg)";
+    }
+}) 
+</script>
+</body>
+</html>
